@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="page-shell">
+        <section class="panel result-panel">
+            <header class="page-header">
+                <p class="eyebrow">Prediction Result</p>
+                <h1>{{ prediction }}</h1>
+                <p class="risk {{ risk_level|lower|replace(' ', '-') }}">{{ risk_level }}</p>
+            </header>
+
+            <dl class="input-summary">
+                {% for label, value in student_input.items() %}
+                    <div>
+                        <dt>{{ label }}</dt>
+                        <dd>{{ value }}</dd>
+                    </div>
+                {% endfor %}
+            </dl>
+
+            <a class="button-link" href="{{ url_for('index') }}">Try Another Prediction</a>
+        </section>
+    </main>
+</body>
+</html>

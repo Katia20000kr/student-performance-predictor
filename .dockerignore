@@ -1,0 +1,9 @@
+.codex-deps/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+.git/
+.ipynb_checkpoints/
+flask*.log

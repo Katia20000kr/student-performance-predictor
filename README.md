@@ -100,7 +100,7 @@ http://127.0.0.1:5056
 See `APP_USAGE_AND_TEST_SCENARIOS.md` for step-by-step usage instructions, test scenarios, and expected outcomes.
 
 ## Report
-See `REPORT_GR.md` for the Greek project report.
+See `REPORT_GR.md` for the Greek project report in Markdown format.
 
 ## AI Demonstration Script
 The file `notebook/student_performance_ai.py` demonstrates the AI workflow:
